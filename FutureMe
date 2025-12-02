@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>FutureMe</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cce7ff; /* Azul bebé */
+            color: #003366; /* Azul escuro */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0055aa;
+        }
+
+        /* Formulário de contacto */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #003366;
+        }
+
+        form input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0055aa;
+        }
+
+        /* Pesquisa */
+        .search-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #003366;
+        }
+
+        /* Redes sociais */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #003366;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media(max-width: 768px) {
+            header nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header / Menu -->
+    <header>
+        <h1>FutureMe</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#planos">Planos</a>
+            <a href="#sessoes">Sessões Presenciais</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#cursos">Cursos Online</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="Ínicio">
+        <h2>Transforma o teu futuro com orientação e prática</h2>
+        <p>O O teu futuro começa aqui</p>
+        <div class="card">
+            <h3>O que nos diferencia?</h3>
+            <ul>
+                <li>Possibilitamos a exploração de várias carreiras</li>
+                <li>Proporcionamos experiências reais com parceriais em empresas e escolas</li>
+                <li>Disponibilizamos Workshops técnicos e sessões presenciais</li>
+                <li>Oferecemos suporte personalizado para cada aluno</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos">
+        <h2>Planos FutureMe</h2>
+
+        <div class="card">
+            <h3>Planos Jovens</h3>
+            <p>Planos personalizados para estudantes onde podem realizar estágios em diferentes empresas.</p>
+            <p>Plano Holiday - Inclui : Uma sessão inicial, orientação e acompanhamento, estágio em período de férias , entre 2 a 4 semanas, em duas empresas à escolha.</p>
+            <p>Plano Anual - Inclui : Uma sessão inicial, orientação e acompanhamento, estágio contínuo ao longo do ano letivo, durante 6 horas por semana, estágios rotativos com empresas parceiras à escolha.</p>
+            <a class="button" href="#contacto">Inscreva-se</a>
+        </div>
+
+        <div class="card">
+            <h3>Planos Escolas</h3>
+            <p>Programas para instituições de ensino, com workshops e sessões presenciais.</p>
+            <p>Plano por Sessão - Inclui : Sessão de apresentação e um workshop característico.</p>
+            <p>Plano Anual - Inclui : Sessão de apresentação, sessões de orientação quinzenais e de apresentação dos jovens às empresas e workshops característicos.</p>
+            <a class="button" href="#contacto">Inscreva sua escola</a>
+        </div>
+    </section>
+
+    <!-- Sessões Presenciais -->
+    <section id="sessoes">
+        <h2>Sessões Presenciais</h2>
+        <p>Participa das nossas sessões presenciais com profissionais de diversas áreas e explora várias áreas e temas.</p>
+        <a class="button" href="#contacto">Inscreva-se nas Sessões</a>
+    </section>
+
+    <!-- Workshops -->
+    <section id="workshops">
+        <h2>Workshops</h2>
+        <div class="card">
+            <h3>Workshop 1: O Dia a Dia de uma Empresa</h3>
+            <p>Descobre como tudo funciona num dia de uma empresa e aprende com profissionais experientes.</p>
+        </div>
+        <div class="card">
+            <h3>Workshop 2: Estações de Carreira</h3>
+            <p>Experimenta várias profissões e descobre a que mais te fascina.</p>
+        </div>
+        <div class="card">
+            <h3>Workshop 3: Resolve um Desafio Real de uma Empresa</h3>
+            <p>Cria soluções em equipa e desvenda quais os desafios que podes vir a enfrentar no futuro.</p>
+        </div>
+    </section>
+
+    <!-- Cursos Online -->
+    <section id="cursos">
+        <h2>Cursos Online</h2>
+        <div class="card">
+            <h3>Curso 1: Preparação para o Mercado de Trabalho</h3>
+            <p>Aprende como construir CV, carta de apresentação e como se destacar em entrevistas.</p>
+        </div>
+        <div class="card">
+            <h3>Curso 2: Gestão de Projetos Académicos</h3>
+            <p>Domina técnicas de planeamento e execução de projetos escolares e universitários.</p>
+        </div>
+        <div class="card">
+            <h3>Curso 3: Educação financeira</h3>
+            <p>Investe na tua informação financeira e aprende como cuidar do teu dinheiro</p>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O FutureMe nasceu com o objetivo de aproximar os alunos do mundo académico e profissional, oferecendo experiências práticas, orientação e workshops inovadores.</p>
+        <p>O que nos diferencia é a combinação de conhecimento teórico com experiências reais, parcerias com empresas e escolas e um acompanhamento personalizado.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <!-- Pesquisa simples -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+        </div>
+
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem" rows="5" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div class="social-icons">
+            <a href="#" target="_blank">🔗</a>
+            <a href="#" target="_blank">🔗</a>
+            <a href="#" target="_blank">🔗</a>
+        </div>
+    </section>
+
+    <script>
+        // Pesquisa simples: destaca se a palavra existe em alguma seção
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            document.querySelectorAll('section').forEach(section => {
+                const text = section.innerText.toLowerCase();
+                if(text.includes(filter) || filter === '') {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
